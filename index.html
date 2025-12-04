@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$PAPER - PREPARE TO REGRET</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/q719tznB/ADS-2025-12-04T182514-862.png" />
+    
+    <!-- Google Fonts for Chaos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Share+Tech+Mono&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'panic-dark': '#05050A',
+              'panic-pink': '#FF0099',
+              'panic-orange': '#FF4500',
+              'panic-alert': '#FFDD00',
+            },
+            fontFamily: {
+              'glitch': ['"Rubik Glitch"', 'display'],
+              'mono': ['"Share Tech Mono"', 'monospace'],
+              'clean': ['"Inter"', 'sans-serif'],
+            },
+            animation: {
+              'shake-constant': 'shake 0.5s cubic-bezier(.36,.07,.19,.97) infinite',
+              'pulse-fast': 'pulse 0.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              shake: {
+                '0%, 100%': { transform: 'translate3d(0, 0, 0)' },
+                '10%, 90%': { transform: 'translate3d(-1px, 0, 0)' },
+                '20%, 80%': { transform: 'translate3d(2px, 0, 0)' },
+                '30%, 50%, 70%': { transform: 'translate3d(-4px, 0, 0)' },
+                '40%, 60%': { transform: 'translate3d(4px, 0, 0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #05050A;
+        color: #e2e8f0;
+        overflow: hidden; /* Force single screen feel */
+      }
+      /* Mobile override */
+      @media (max-width: 768px) {
+        body {
+          overflow-y: auto;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
